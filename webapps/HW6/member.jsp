@@ -3,9 +3,9 @@
 <jsp:useBean id="database" class="com.database.Database">
   <jsp:setProperty property="ip" name="database" value="140.120.49.205" />
   <jsp:setProperty property="port" name="database" value="3306" />
-  <jsp:setProperty property="db" name="database" value="4104029022" />
-  <jsp:setProperty property="user" name="database" value="4104029022" />
-  <jsp:setProperty property="password" name="database" value="Ss4104029022!" />
+  <jsp:setProperty property="db" name="database" value="4104029018" />
+  <jsp:setProperty property="user" name="database" value="4104029018" />
+  <jsp:setProperty property="password" name="database" value="Ss4104029018!" />
 </jsp:useBean>
 <%
  request.setCharacterEncoding("UTF-8");
@@ -62,7 +62,17 @@
     <meta charset="utf-8">
     <title>會員管理</title>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+    table {
+    	font-family: arial, sans-serif;
+    	border-collapse: collapse;
+    	}
+    td, th {
+    	border: 2px solid black;
+    	font-weight: bold;
+    }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -94,9 +104,36 @@
                 }
               }
             }
-          }
-          %>
-          <%if(x==0 && y==0){%>
+          }if(x!=0){%>
+          <table>
+            <tr><th colspan="4">會員資料</th></tr>
+            <tr>
+              <th>姓名</th><th>生日</th><th>E-mail</th><th>電話號碼</th>
+              <%
+                try{
+                  database.connectDB();
+                  String sql = "select * from person;";
+                  database.query(sql);
+                  rs = database.getRS();
+                }catch(Exception ex){
+                  out.println(ex);
+                }
+                if(rs!=null){
+                  while(rs.next()){
+                    %>
+                    <tr>
+                      <td><%=rs.getString("name")%></td>
+                      <td><%=rs.getString("birth")%></td>
+                      <td><%=rs.getString("email")%></td>
+                      <td><%=rs.getString("phone")%></td>
+                    </tr>
+                    <%
+                  }
+                }
+              %>
+            </tr>
+          </table>
+          <%}if(x==0 && y==0){%>
             <script>$("#test").html("登入失敗");</script>
             <p>帳號或密碼錯誤</p>
             <input type="button" onclick="window.open('new.jsp','_self')" value="創建新賬號"/>
