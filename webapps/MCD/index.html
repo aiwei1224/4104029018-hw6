@@ -37,13 +37,13 @@
 var x = 0;
 function numRand() {
   if(x==0){
-    var y = 9999;
-    x++;
-  }else if(x==1){
     var y = 8888;
     x++;
-  }else{
+  }else if(x==1){
     var y = 7777;
+    x++;
+  }else{
+    var y = 9999;
     x++;
   }
   return y;
@@ -60,10 +60,10 @@ $(function(){
         if(result == 9999){
           $('#res');
         }
-        if(result == 8888){
+        if(result == 7777){
           $('#res');
         }
-        if(result == 7777){
+        if(result == 8888){
           $('#res');
         }
         var num_arr = (result+'').split('');
