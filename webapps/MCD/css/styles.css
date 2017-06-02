@@ -46,19 +46,8 @@ body {
 	margin-left: 45px;
 	margin-right: 15px;
 }
-.btn {
-	background: url(../images/btn_start.png) 0px 0px no-repeat;
+#btn {
 	width: 264px;
-	height: 89px;
-	position: absolute;
-	left: 50%;
-	bottom: 50px;
-	margin-left: -132px;
+	height: 69px;
 	cursor: pointer;
-	clear: both;
-}
-.result {
-	text-align: center;
-	color: #ffffff;
-	padding-top: 20px;
 }
