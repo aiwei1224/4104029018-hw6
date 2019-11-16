@@ -1,0 +1,838 @@
+body, html {
+    overflow-x: hidden;
+}
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+
+ main {
+   flex: 1 0 auto;
+ }
+nav{
+  background-color: #151b21;
+}
+.logo a {
+	display: block;
+	margin: 1;
+	padding: 1;
+	outline: 0;
+	border: none;
+	width: 400px;
+	height: 100px;
+	background: url("../images/Group 12.png") no-repeat center;
+	background-size: 350px 100px;
+
+}
+.logo {
+  position: absolute;
+    top: 15%;
+    left: 2%; //右邊上面都設0，則出現在右上方
+
+}
+
+nav .sidenav-trigger i{
+  margin-left:255px;
+  padding-top: 0.6rem;
+}
+@media only screen and (min-device-width : 720px) and (max-device-width : 1024px) {
+.logo a {
+  position: absolute;
+    top: 0%;
+  background-size: 80% 80%;
+}
+.intro-img {
+opacity:0.4;
+
+position: relative;
+left:-13%;
+  }
+
+  nav .sidenav-trigger i{
+    margin-left:650px;
+    padding-top: 2rem;
+    height:100%;
+    width:100%;
+  }
+  body nav{
+    padding-bottom:7rem;
+  }
+}
+
+@media only screen and (min-device-width : 300px) and (max-device-width : 720px) {
+  .intro-img {
+  opacity:0.4;
+  position: relative;
+left:-11%;
+    }
+  .logo a {
+    position: absolute;
+      top: -20px;
+      left:-80px;
+    background-size: 50% 50%;
+  }
+  nav .sidenav-trigger i{
+    position: absolute;
+      left:-180px;
+    padding-top: 0.6rem;
+  }
+}
+
+
+nav ul a {
+    font-size: 100%;
+    color: #888b8e;
+    display: block;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+.intro-img {
+  margin-top: -43%;
+  margin-left: 66%;
+  height:55%;
+  width: 55%;
+}
+#intro {
+  background: #151b21;
+  height: 100%;
+  overflow: hidden;
+}
+.margin-100 {
+    margin-top: 30%;
+    margin-left: 1%;
+}
+#intro h1 {
+  font-family: "Microsoft JhengHei";
+  color: #ffffff;
+font-size: 450%;
+}
+
+#intro h2, h3, p,a, .navbar-nav {
+  font-family: "Microsoft JhengHei";
+  color: #ffffff;
+      font-size: 300%;
+}
+
+@media only screen and (max-width:600px) {
+  #intro h1 {
+  	font-size: 2.3rem;
+}
+#intro h2, h3, p,a {
+  	font-size: 1.5rem;
+}
+.margin-100 {
+  margin-top: 30%;
+  margin-left:8%;
+}
+.intro-img {
+  margin-top: -45%;
+  margin-left: 60%;
+}
+}
+#auto h3{
+  color: black;
+  font-family: "Microsoft JhengHei";
+  	font-size: 200%;
+    font-weight: bold;
+      text-align: center;
+}
+p.lead {
+	font-family: "Microsoft JhengHei";
+	font-size: 120%;
+	line-height: 1.714;
+	color: black;
+  text-align: center;
+  margin: auto;
+  width: 45%;
+  padding: 1%;
+}
+@media only screen and (min-device-width : 300px) and (max-device-width : 720px) {
+  #auto h3{
+    font-size: 20px;
+      margin-left:9%;
+width: 80%;
+  }
+  p.lead {
+  	font-size: 150px;
+    margin: auto;
+    width: 95%;
+    padding: 7%;
+  }
+}
+
+}
+@media only screen and (min-device-width : 720px) and (max-device-width : 1024px) {
+
+  #auto h3{
+    font-size: 2.5rem;
+  }
+  p.lead {
+  font-size: 18px;
+  width: 80%;
+  }
+}
+@media only screen and (max-width:600px) {
+#auto h3{
+  font-size: 2rem;
+}
+p.lead {
+font-size: 1rem;
+}
+nav .sidenav-trigger i{
+  margin-left:430px;
+  padding-top: 0.6rem;
+}
+
+}
+
+#auto {
+	padding: 6% 0 6%;
+	background-color: #f9da4f;
+	overflow: hidden;
+}
+h1.aai {
+  font-family: "Microsoft JhengHei";
+  position: relative;
+  top: -150px;
+  left: 48.5%;
+  color: #1e2429;
+      width: 40%;
+    font-weight: bold;
+  font-size: 300%;
+}
+h2.aai {
+  font-family: "Microsoft JhengHei";
+  position: relative;
+    top: -170px;
+  left: 48.5%;
+  color: #1e2429;
+    width: 40%;
+    font-weight: bold;
+  font-size: 250%;
+}
+p.aai {
+  font-family: "Microsoft JhengHei";
+  position: relative;
+  	line-height: 1.714;
+    font-weight: bold;
+  top: -150px;
+  left: 48.5%;
+  text-align: left;
+  width: 45%;
+  font-size: 100%;
+  color: #1e2429;
+}
+.ai-img {
+  margin-top: -35%;
+  margin-left: 0%;
+  height: 35%;
+  width: 35%;
+}
+#ai li.lol {
+  font-family: "Microsoft JhengHei";
+  position: relative;
+top: -50px;
+  margin-left: 0%;
+    width: 40%;
+    font-weight: bold;
+  font-size: 200%;
+}
+a.btn{
+  margin-top: -28%;
+  margin-left: 49%;
+    border-radius: 45px;
+background-color: #151b21;
+}
+
+@media only screen and (min-device-width : 720px) and (max-device-width : 1024px) {
+
+  h1.aai {
+    font-size: 33px;
+  margin-left: -10%;
+  width:45%;
+  }
+  h2.aai {
+  margin-left: -10%;
+    font-size: 24px;
+  }
+  p.aai {
+      margin-left: -10%;
+    font-size: 18px;
+width:50%;
+  }
+  a.btn{
+      margin-left: 38%;
+    margin-top: -45%;
+      font-size: 17px;
+
+
+  }
+  .ai-img {
+    height: 40%;
+    width:40%;
+      margin-top: -20%;
+
+
+  }
+}
+
+@media only screen and (max-width:600px) {
+  h1.aai {
+    font-size: 30px;
+    margin-top: 30%;
+    width: 70%;
+      margin-left: -40%;
+  }
+  h2.aai {
+    width: 60%;
+      margin-left: -40%;
+    font-size: 25px;
+  }
+  p.aai {
+    font-size: 14px;
+    width: 70%;
+      margin-left: -40%;
+  }
+  a.btn{
+    margin-top: -35%;
+    margin-left: 10%;
+    height: 15%;
+    width: 28%;
+      font-size: 14px;
+  }
+  .ai-img {
+    margin-top: -20%;
+    margin-left: 0%;
+    height: 50%;
+    width:50%;
+  }
+}
+
+@media only screen
+
+and (min-device-width : 300px)
+
+and (max-device-width : 708px) {
+
+h1.aai {
+  font-size: 25px;
+  margin-top: 45%;
+  width: 85%;
+    margin-left: -40%;
+}
+h2.aai {
+  width: 70%;
+    margin-left: -40%;
+  font-size: 20px;
+}
+p.aai {
+  font-size: 14px;
+  width: 90%;
+    margin-left: -40%;
+}
+a.btn{
+  margin-top: -30%;
+  margin-left: 10%;
+  height: 15%;
+  width: 33%;
+    font-size: 11px;
+}
+.ai-img {
+  margin-top: -30%;
+  margin-left: 0%;
+  height: 60%;
+  width:60%;
+}
+}
+
+.gray {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  padding: 1% 0 1%;
+	background-color: #e2e5e7;
+  z-index: -1;
+}
+.app-img {
+  margin-top: -34%;
+  margin-left: 65%;
+  height: 35%;
+  width: 35%;
+}
+h1.app {
+  font-family: "Microsoft JhengHei";
+  position: relative;
+  top: -50px;
+  left: 7.5%;
+  width: 50%;
+  color: #1e2429;
+    font-weight: bold;
+  font-size: 300%;
+}
+h2.app {
+  font-family: "Microsoft JhengHei";
+  position: relative;
+  top: -70px;
+  left: 7.5%;
+  width: 50%;
+  color: #1e2429;
+    font-weight: bold;
+  font-size: 200%;
+}
+ul.b {
+  list-style-type:  circle;
+  position: relative;
+
+}
+@media only screen and (max-width:600px) {
+  h1.app {
+    font-size: 30px;
+  }
+  h2.app {
+  width: 80%;
+    font-size: 22px;
+  }
+  #ai li,i.tiny
+  {
+      font-size:6px;
+  }
+  .app-img {
+    height: 50%;
+    width:50%;
+    margin-top: -20%;
+    margin-left: 50%;
+  }
+}
+@media only screen
+
+and (min-device-width : 320px)
+
+and (max-device-width : 568px) {
+  h1.app {
+    font-size: 29px;
+  }
+  h2.app {
+  width: 80%;
+    font-size: 18px;
+  }
+  #ai li.lol {
+  font-size:20px;
+  width: 80%;
+  }
+  #ai li,i.tiny
+  {
+      font-size:7px;
+  }
+  .app-img {
+    height: 50%;
+    width:50%;
+    margin-top: -20%;
+    margin-left: 50%;
+  }
+}
+#ai li,i.tiny
+{
+  font-weight: bold;
+  position: relative;
+  top: -20px;
+  left: 7.5%;
+  color: #1e2429;
+  line-height: 40px;　
+  font-family: "Microsoft JhengHei";
+    font-size: 115%;
+}
+.aa-img{
+  height: 30%;
+  width: 30%;
+  margin-top: -10%;
+  margin-left: 65%;
+
+}
+h1.bb {
+  font-family: "Microsoft JhengHei";
+  position: relative;
+  top: 150px;
+  left: 7.5%;
+    width: 50%;
+  color: #1e2429;
+    font-weight: bold;
+  font-size: 300%;
+}
+#app p.cc {
+  font-weight: bold;
+  font-family: "Microsoft JhengHei";
+  position: relative;
+    line-height: 1.5;
+    top: 150px;
+    left: 100px;
+    font-size: 100%;
+      text-align: left;
+  width: 50%;
+  color: #1e2429;
+}
+ #app hr.hr{
+    position: relative;
+    left: -48%;
+    width: 4%;
+}
+@media only screen and (min-device-width : 720px) and (max-device-width : 1024px) {
+
+#app p.cc {
+    left: 59px;
+}
+}
+@media only screen and (max-width:600px) {
+  h1.bb {
+  top: 390px;
+    font-size: 32px;
+    left: 190px;
+  }
+  #app p.cc {
+      font-size: 17px;
+      top: 390px;
+      left: 80px;
+      width: 80%;
+        text-align: center;
+  }
+  #app hr.hr{
+     position: relative;
+     left: -13%;
+     width: 10%;
+ }
+  .aa-img{
+    height: 40%;
+    width: 40%;
+    margin-top: -30%;
+      margin-left: 30%;
+
+
+  }
+  #app hr.hai{
+    position: relative;
+    top: 250px;
+  }
+}
+@media only screen
+
+and (min-device-width : 320px)
+
+and (max-device-width :708px) {
+  .aa-img{
+      max-width:100%;
+ position: relative;
+  top: -130px;
+}
+h1.bb {
+top: 200px;
+width: 70%;
+  font-size: 32px;
+  left: 70px;
+}
+#app p.cc {
+    font-size: 15px;
+    top: 200px;
+    left:20px;
+    width: 90%;
+      text-align: center;
+}
+#app hr.hai{
+  position: relative;
+  top: 180px;
+}
+  }
+
+
+
+#sales h1{
+  font-family: "Microsoft JhengHei";
+  position: relative;
+  margin-top: 9%;
+left: 48.5%;
+  color: #1e2429;
+  width: 50%;
+    font-weight: bold;
+  font-size: 250%;
+}
+#sales p {
+  font-weight: bold;
+  font-family: "Microsoft JhengHei";
+  position: relative;
+    line-height: 1.5;
+margin-top: 2%;
+    left: 48.5%;
+   width: 50%;
+     text-align: left;
+    font-size: 100%;
+  color: #1e2429;
+}
+#sales hr.zz{
+   position: relative;
+   left: -280px;
+   width: 4%;
+}
+.pic06{
+  height: 30%;
+  width: 30%;
+  margin-top: -35%;
+  margin-left: 8.5%;
+
+}
+@media only screen and (min-device-width : 720px) and (max-device-width : 1024px) {
+  #sales hr.zz{
+     position: relative;
+     left: -170px;
+     width: 4%;
+  }
+}
+@media only screen and (max-width:600px) {
+
+  #sales h1{
+  width: 70%;
+    left: 30%;
+    top: 550px;
+    font-size: 30PX;
+  }
+  #sales p {
+    width: 90%;
+      left: 6%;
+      top:550px;
+      text-align: center;
+      font-size: 17px;
+  }
+  .pic06{
+    max-width:100%;
+
+  margin-top: -130px;
+  margin-left:35%;
+    height:auto;
+  }
+  #sales {
+  	margin-bottom: 80%;
+  }
+  #sales hr.zz{
+     position: relative;
+     left: -80px;
+     width: 7%;
+  }
+}
+
+@media only screen
+
+and (min-device-width : 320px)
+
+and (max-device-width :708px) {
+
+    #sales h1{
+      position: relative;
+    width: 80%;
+      left: 10%;
+      top:350px;
+      font-size: 30PX;
+    }
+    #sales p {
+        position: relative;
+      width: 90%;
+        left: 6%;
+        top:350px;
+        text-align: center;
+        font-size: 17px;
+          margin-bottom:35%;
+    }
+    .pic06{
+      max-width:100%;
+ position: relative;
+  top: -450px;
+    margin-left:35%;
+      height:auto;
+    }
+    #sales {
+    	margin-bottom: 80%;
+    }
+    #sales hr.zz{
+       position: relative;
+       left: -10px;
+       width: 7%;
+    }
+
+  }
+
+
+#contact  {
+	padding: 5% 0 5%;
+	background-color: #ff422e;
+	overflow: hidden;
+}
+#contact h3,p{
+    font-weight: bold;
+    font-family: "Microsoft JhengHei";
+text-align:center;
+color: #fccac4;
+
+}
+#contact h3{
+    font-size: 200%;
+}
+#contact p{
+font-size: 120%;
+
+}
+
+@media only screen and (max-width:600px) {
+
+  #contact h3{
+      font-size: 25px;
+  }
+  #contact p{
+  font-size: 16px;
+  }
+  #company{
+    position: relative;
+    left: -15%;
+  }
+  #phone{
+    position: relative;
+    left: -15%;
+  }
+
+
+  #name {
+    position: relative;
+    left: 16%;
+    top: 10px;
+  }
+
+  #mail {
+    position: relative;
+    left: 16%;
+    top: 11px;
+  }
+
+}
+
+@media only screen
+
+and (min-device-width : 320px)
+
+and (max-device-width :708px) {
+
+    #contact h3{
+        font-size: 25px;
+    }
+    #contact p{
+    font-size: 16px;
+     width: 70%;
+       margin-left: 15%;
+    }
+    #submit.waves-effect input[type="submit"]{
+    background-color: #ea1600;
+    font color: white;
+    position: relative;
+    left: 16%;
+
+    }
+    .btn,.btn-large,.btn-small {
+      background-color: #ea1600;
+      font color: white;
+      position: relative;
+      left: -10%;
+    }
+}
+input[type=tel]:not(.browser-default){
+  background-color: #ff6757;
+  font-weight: bold;
+  font-family: "Microsoft JhengHei";
+      border-radius: 4%;
+      border-bottom: 0px solid #ff6757;
+      outline: #ff6757;
+      height: 3rem;
+      width: 70%;
+      font-size: 100%;
+      margin:-1% auto;
+      padding: 0;
+      text-align: center;
+      font color: #ff9a8f;
+        margin-left: 0%;
+}
+
+input[type=email]:not(.browser-default){
+  background-color: #ff6757;
+  font-weight: bold;
+  font-family: "Microsoft JhengHei";
+      border-radius: 4%;
+      border-bottom: 0px solid #ff6757;
+      outline: #ff6757;
+      height: 3rem;
+      width: 70%;
+      font-size: 100%;
+      margin:-1% auto;
+      padding: 0;
+      text-align: center;
+      font color: #ff9a8f;
+        margin-left: 0%;
+}
+
+input[type=text]:not(.browser-default){
+  background-color: #ff6757;
+  font-weight: bold;
+  font-family: "Microsoft JhengHei";
+      border-radius: 4%;
+      border-bottom: 0px solid #ff6757;
+      outline: #ff6757;
+      height: 3rem;
+      width: 70%;
+      font-size: 100%;
+      margin:-1% auto;
+      padding: 0;
+      text-align: center;
+      font color: #ff9a8f;
+        margin-left: 0%;
+}
+#submit.waves-effect input[type="submit"]{
+background-color: #ea1600;
+font color: white;
+  margin-left: 20%;
+}
+.btn,.btn-large,.btn-small {
+  background-color: #ea1600;
+  font color: white;
+  margin-left: 46%;
+}
+
+#company{
+margin-left:  30%;
+}
+#phone{
+  margin-left:  30%;
+}
+#qa{
+  margin-left: 14.9%;
+}
+
+#name {
+margin-left:-1%;
+}
+
+#mail {
+  margin-left:-1%;
+}
+
+.page-footer {
+    padding-top:5%;
+    color: #fff;
+    background-color: #151b21;
+
+}
+.grey-text.text-lighten-3 {
+    color: #8e9194 !important;
+    line-height: 2;
+}
+h5.white-text{
+  font-size: 200%;
+  font-weight: bold;
+  font-family: "Microsoft JhengHei";
+}
+a,li.grey-text{
+    font-size: 100%;
+}
